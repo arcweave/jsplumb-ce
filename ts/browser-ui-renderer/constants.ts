@@ -24,6 +24,10 @@ export const ATTRIBUTE_JTK_ENABLED = "data-jtk-enabled"
  * @public
  */
 export const ATTRIBUTE_JTK_SCOPE = "data-jtk-scope"
+/**
+ * @public
+ */
+export const ATTRIBUTE_JTK_PARENT_ID = "data-jtk-parent-id"
 
 /**
  * @public

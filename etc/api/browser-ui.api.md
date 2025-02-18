@@ -468,6 +468,9 @@ export const ATTRIBUTE_GROUP_CONTENT = "data-jtk-group-content";
 export const ATTRIBUTE_JTK_ENABLED = "data-jtk-enabled";
 
 // @public (undocumented)
+export const ATTRIBUTE_JTK_PARENT_ID = "data-jtk-parent-id";
+
+// @public (undocumented)
 export const ATTRIBUTE_JTK_SCOPE = "data-jtk-scope";
 
 // @public (undocumented)
@@ -5088,17 +5091,17 @@ export const Y_AXIS_FACES: Axis;
 
 // Warnings were encountered during analysis:
 //
-// /Users/simon/programming/jsplumb/jsplumb-6/dist/browser-ui/types/browser-ui-renderer/browser-jsplumb-instance.d.ts:506:9 - (ae-forgotten-export) The symbol "ElementAttributes" needs to be exported by the entry point index.d.ts
-// /Users/simon/programming/jsplumb/jsplumb-6/dist/browser-ui/types/browser-ui-renderer/svg-util.d.ts:17:5 - (ae-forgotten-export) The symbol "_attr" needs to be exported by the entry point index.d.ts
-// /Users/simon/programming/jsplumb/jsplumb-6/dist/browser-ui/types/browser-ui-renderer/svg-util.d.ts:18:5 - (ae-forgotten-export) The symbol "_node" needs to be exported by the entry point index.d.ts
-// /Users/simon/programming/jsplumb/jsplumb-6/dist/browser-ui/types/core/connector/abstract-connector.d.ts:26:5 - (ae-incompatible-release-tags) The symbol "sourcePos" is marked as @public, but its signature references "AnchorPlacement" which is marked as @internal
-// /Users/simon/programming/jsplumb/jsplumb-6/dist/browser-ui/types/core/connector/abstract-connector.d.ts:27:5 - (ae-incompatible-release-tags) The symbol "targetPos" is marked as @public, but its signature references "AnchorPlacement" which is marked as @internal
-// /Users/simon/programming/jsplumb/jsplumb-6/dist/browser-ui/types/core/connector/abstract-connector.d.ts:31:5 - (ae-incompatible-release-tags) The symbol "sourceInfo" is marked as @public, but its signature references "ViewportElement" which is marked as @internal
-// /Users/simon/programming/jsplumb/jsplumb-6/dist/browser-ui/types/core/connector/abstract-connector.d.ts:32:5 - (ae-incompatible-release-tags) The symbol "targetInfo" is marked as @public, but its signature references "ViewportElement" which is marked as @internal
-// /Users/simon/programming/jsplumb/jsplumb-6/dist/browser-ui/types/core/connector/connectors.d.ts:5:5 - (ae-incompatible-release-tags) The symbol "get" is marked as @public, but its signature references "AbstractConnector" which is marked as @internal
-// /Users/simon/programming/jsplumb/jsplumb-6/dist/browser-ui/types/core/connector/connectors.d.ts:6:5 - (ae-incompatible-release-tags) The symbol "register" is marked as @public, but its signature references "AbstractConnector" which is marked as @internal
-// /Users/simon/programming/jsplumb/jsplumb-6/dist/browser-ui/types/core/core.d.ts:72:5 - (ae-incompatible-release-tags) The symbol "viewportElement" is marked as @public, but its signature references "ViewportElement" which is marked as @internal
-// /Users/simon/programming/jsplumb/jsplumb-6/dist/browser-ui/types/core/factory/endpoint-factory.d.ts:10:5 - (ae-incompatible-release-tags) The symbol "compute" is marked as @public, but its signature references "AnchorPlacement" which is marked as @internal
+// /home/zanzavar/jsplumb-aw/dist/browser-ui/types/browser-ui-renderer/browser-jsplumb-instance.d.ts:506:9 - (ae-forgotten-export) The symbol "ElementAttributes" needs to be exported by the entry point index.d.ts
+// /home/zanzavar/jsplumb-aw/dist/browser-ui/types/browser-ui-renderer/svg-util.d.ts:17:5 - (ae-forgotten-export) The symbol "_attr" needs to be exported by the entry point index.d.ts
+// /home/zanzavar/jsplumb-aw/dist/browser-ui/types/browser-ui-renderer/svg-util.d.ts:18:5 - (ae-forgotten-export) The symbol "_node" needs to be exported by the entry point index.d.ts
+// /home/zanzavar/jsplumb-aw/dist/browser-ui/types/core/connector/abstract-connector.d.ts:26:5 - (ae-incompatible-release-tags) The symbol "sourcePos" is marked as @public, but its signature references "AnchorPlacement" which is marked as @internal
+// /home/zanzavar/jsplumb-aw/dist/browser-ui/types/core/connector/abstract-connector.d.ts:27:5 - (ae-incompatible-release-tags) The symbol "targetPos" is marked as @public, but its signature references "AnchorPlacement" which is marked as @internal
+// /home/zanzavar/jsplumb-aw/dist/browser-ui/types/core/connector/abstract-connector.d.ts:31:5 - (ae-incompatible-release-tags) The symbol "sourceInfo" is marked as @public, but its signature references "ViewportElement" which is marked as @internal
+// /home/zanzavar/jsplumb-aw/dist/browser-ui/types/core/connector/abstract-connector.d.ts:32:5 - (ae-incompatible-release-tags) The symbol "targetInfo" is marked as @public, but its signature references "ViewportElement" which is marked as @internal
+// /home/zanzavar/jsplumb-aw/dist/browser-ui/types/core/connector/connectors.d.ts:5:5 - (ae-incompatible-release-tags) The symbol "get" is marked as @public, but its signature references "AbstractConnector" which is marked as @internal
+// /home/zanzavar/jsplumb-aw/dist/browser-ui/types/core/connector/connectors.d.ts:6:5 - (ae-incompatible-release-tags) The symbol "register" is marked as @public, but its signature references "AbstractConnector" which is marked as @internal
+// /home/zanzavar/jsplumb-aw/dist/browser-ui/types/core/core.d.ts:72:5 - (ae-incompatible-release-tags) The symbol "viewportElement" is marked as @public, but its signature references "ViewportElement" which is marked as @internal
+// /home/zanzavar/jsplumb-aw/dist/browser-ui/types/core/factory/endpoint-factory.d.ts:10:5 - (ae-incompatible-release-tags) The symbol "compute" is marked as @public, but its signature references "AnchorPlacement" which is marked as @internal
 
 // (No @packageDocumentation comment for this package)
 

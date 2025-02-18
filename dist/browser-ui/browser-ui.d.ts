@@ -532,6 +532,11 @@ export declare const ATTRIBUTE_JTK_ENABLED = "data-jtk-enabled";
 /**
  * @public
  */
+export declare const ATTRIBUTE_JTK_PARENT_ID = "data-jtk-parent-id";
+
+/**
+ * @public
+ */
 export declare const ATTRIBUTE_JTK_SCOPE = "data-jtk-scope";
 
 export declare const ATTRIBUTE_MANAGED = "data-jtk-managed";

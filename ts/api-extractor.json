@@ -1,0 +1,1 @@
+{"extends":"../api-extractor-common.json","mainEntryPointFilePath":"../dist/browser-ui/types/index.d.ts"}

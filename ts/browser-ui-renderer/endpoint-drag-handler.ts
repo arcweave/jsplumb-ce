@@ -10,7 +10,8 @@ import {
     EVENT_MOUSEDOWN,
     EVENT_MOUSEUP,
     EVENT_CONNECTION_ABORT,
-    EVENT_CONNECTION_DRAG, ATTRIBUTE_JTK_SCOPE
+    EVENT_CONNECTION_DRAG, ATTRIBUTE_JTK_SCOPE,
+    ATTRIBUTE_JTK_PARENT_ID
 } from './constants'
 
 import {consume, createElement, findParent, getElementPosition, getElementSize } from "./browser-util"
@@ -681,7 +682,12 @@ export class EndpointDragHandler implements DragHandler {
 
                         let d: any = {r: null, el}
 
-                        if (targetDef.def.def.parentSelector != null) {
+                        const parentId = el.getAttribute(ATTRIBUTE_JTK_PARENT_ID)
+                        if (parentId != null) {
+                            d.targetEl = document.getElementById(parentId) as jsPlumbDOMElement
+                        }
+
+                        if (d.targetEl == null && targetDef.def.def.parentSelector != null) {
                             d.targetEl = findParent(el as unknown as jsPlumbDOMElement, targetDef.def.def.parentSelector, this.instance.getContainer(), true)
                         }
                         if (d.targetEl == null) {
