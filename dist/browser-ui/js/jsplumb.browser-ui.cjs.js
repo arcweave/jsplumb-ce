@@ -4769,7 +4769,13 @@ var EndpointDragHandler = function () {
                 r: null,
                 el: el
               };
-              d.targetEl = findParent(el, SELECTOR_MANAGED_ELEMENT, _this.instance.getContainer(), true);
+              var parentId = el.getAttribute(ATTRIBUTE_JTK_PARENT_ID);
+              if (parentId != null) {
+                d.targetEl = document.getElementById(parentId);
+              }
+              if (d.targetEl == null) {
+                d.targetEl = findParent(el, SELECTOR_MANAGED_ELEMENT, _this.instance.getContainer(), true);
+              }
               var o = getElementPosition(d.el, _this.instance),
                 s = getElementSize(d.el, _this.instance);
               d.r = {

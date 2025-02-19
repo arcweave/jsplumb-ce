@@ -644,7 +644,13 @@ export class EndpointDragHandler implements DragHandler {
                         }
 
                         let d: any = {r: null, el}
-                        d.targetEl = findParent(el as unknown as jsPlumbDOMElement, SELECTOR_MANAGED_ELEMENT, this.instance.getContainer(), true)
+                        const parentId = el.getAttribute(ATTRIBUTE_JTK_PARENT_ID)
+                        if (parentId != null) {
+                            d.targetEl = document.getElementById(parentId) as jsPlumbDOMElement
+                        }
+                        if (d.targetEl == null) {
+                            d.targetEl = findParent(el as unknown as jsPlumbDOMElement, SELECTOR_MANAGED_ELEMENT, this.instance.getContainer(), true)
+                        }
 
                         const o = getElementPosition(d.el, this.instance), s = getElementSize(d.el, this.instance)
                         d.r = {x: o.x, y: o.y, w: s.w, h: s.h}
